@@ -11,3 +11,4 @@ sudo apt install gfortran
 f77 hello.f
 ./a.out
 ```
+Or, use the script from [MiniDDots](https://github.com/sahashirshendu/miniddots)
