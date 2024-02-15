@@ -13,4 +13,3 @@ f77 hello.f
 ./a.out
 ```
 Or, use the script from [MiniDDots](https://github.com/sahashirshendu/miniddots)
-https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage.sha256sum
