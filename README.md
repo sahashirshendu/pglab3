@@ -13,4 +13,3 @@ f77 hello.f
 ./a.out
 ```
 Or, use the script from [MiniDDots](https://github.com/sahashirshendu/miniddots)
-https://github.com/aandrew-me/tgpt/releases/download/v2.7.0/tgpt-linux-amd64
