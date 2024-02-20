@@ -12,4 +12,8 @@ sudo apt install gfortran
 f77 hello.f
 ./a.out
 ```
+## Contents
+1. [Divided Difference Table](./div.f)
+
+
 Or, use the script from [MiniDDots](https://github.com/sahashirshendu/miniddots)
