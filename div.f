@@ -23,6 +23,8 @@
       do i = 1,n
       print*,x(i),f(i),d1(i),d2(i),d3(i),d4(i),d5(i)
       end do
-      print*,exp(1.05)
-      print*,f(1)+d1(1)*(1.05-x(1))+d2(1)*(1.05-x(1))*(1.05-x(2))
+      xi = 1.05
+      print *, 'Value =', exp(xi)
+      fi = f(1)+d1(1)*(xi-x(1))+d2(1)*(xi-x(1))*(xi-x(2))
+      print *, 'Interpolated value =', fi
       end
