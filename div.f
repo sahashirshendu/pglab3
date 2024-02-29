@@ -1,30 +1,25 @@
       program divided
-      real, allocatable, dimension(:) :: x,f,d1,d2,d3,d4,d5
+      real,allocatable,dimension(:) :: x,f
+      real,allocatable,dimension(:,:) :: dd
       n = 6
-      allocate(x(n),f(n))
-      allocate(d1(n-1),d2(n-2),d3(n-3),d4(n-4),d5(n-5))
+      allocate(x(n),f(n),dd(n,n+1))
       x = [1.0,1.1,1.3,1.6,1.7,2.0]
       f = [2.718,3.004,3.669,4.953,5.474,7.389]
-      do i = 1,n-1
-      d1(i) = (f(i+1)-f(i))/(x(i+1)-x(i))
-      end do
-      do i = 1,n-2
-      d2(i) = (d1(i+1)-d1(i))/(x(i+2)-x(i))
-      end do
-      do i = 1,n-3
-      d3(i) = (d2(i+1)-d2(i))/(x(i+3)-x(i))
-      end do
-      do i = 1,n-4
-      d4(i) = (d3(i+1)-d3(i))/(x(i+4)-x(i))
-      end do
-      do i = 1,n-5
-      d5(i) = (d4(i+1)-d4(i))/(x(i+5)-x(i))
-      end do
       do i = 1,n
-      print*,x(i),f(i),d1(i),d2(i),d3(i),d4(i),d5(i)
+      dd(i,1) = x(i)
+      dd(i,2) = f(i)
+      end do
+      do j = 3,n+1
+      do i = 1,n-j+2
+      dd(i,j) = (dd(i+1,j-1)-dd(i,j-1)) / (x(i+j-2)-x(i))
+      end do
+      end do
+
+      do i = 1,n
+      print *, dd(i,:) 
       end do
       xi = 1.05
       print *, 'Value =', exp(xi)
-      fi = f(1)+d1(1)*(xi-x(1))+d2(1)*(xi-x(1))*(xi-x(2))
+      fi = f(1)+dd(1,3)*(xi-x(1))+dd(1,4)*(xi-x(1))*(xi-x(2))
       print *, 'Interpolated value =', fi
       end
