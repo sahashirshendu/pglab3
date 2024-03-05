@@ -36,6 +36,7 @@
       end do
       fi = fi+cf*dd(1,i)
       end do
-      print *, 'Exact value =', exp(xi)
-      print *, 'Interpolated value =', fi
+      print*, 'Exact value =', exp(xi)
+      print*, 'Interpolated value =', fi
+      print*, 'Error =', abs(exp(xi)-fi)
       end
