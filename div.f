@@ -38,5 +38,5 @@
       end do
       print*, 'Exact value =', exp(xi)
       print*, 'Interpolated value =', fi
-      print*, 'Error =', abs(exp(xi)-fi)
+      print*, 'Error =', abs((exp(xi)-fi)/exp(xi))
       end
