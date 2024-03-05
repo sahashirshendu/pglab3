@@ -14,6 +14,7 @@ f77 hello.f
 ```
 ## Contents
 1. [Divided Difference Table](./div.f)
+1. [Derivatives](./der.f)
 
 
 Or, use the script from [MiniDDots](https://github.com/sahashirshendu/miniddots)
