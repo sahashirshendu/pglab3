@@ -17,4 +17,5 @@ Or, use the script from [MiniDDots](https://github.com/sahashirshendu/miniddots)
 
 ## Contents
 1. [Divided Difference Table](./div.f)
-1. [Derivatives](./der.f)
+2. [Derivatives](./der.f)
+3. [Trapezoidal & Simpson Integration](./int.f)
