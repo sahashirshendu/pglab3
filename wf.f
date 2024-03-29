@@ -1,7 +1,7 @@
       program wavefunc
-      parameter(n=250)
+      parameter(n=500)
       real :: wf(n)
-      e = -1.5
+      e = -1.0
       wf(1) = 0.
       wf(2) = 1.
       l = 0.
