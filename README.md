@@ -20,6 +20,8 @@ Or, use the script from [MiniDDots](https://github.com/sahashirshendu/miniddots)
 1. [Divided Difference Table](./div.f)
 2. [Derivatives](./der.f)
 3. [Trapezoidal & Simpson Integration](./int.f)
+5. [Gauss Quadrature](./gq.f)
+5. [Random Walk](./rw.f)
 ### Part - B
 #### Assignment 1
 1. [Q1](./density1.f)
