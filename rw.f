@@ -9,7 +9,7 @@
       q=0
       do j=1,n
       call random_number(rp)
-      if (rp.ge.0.5) then
+      if (rp.gt.0.5) then
       q=q+1
       else
       q=q-1
