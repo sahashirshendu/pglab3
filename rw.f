@@ -1,9 +1,9 @@
       program rw
       implicit none
+      real :: rp
       integer :: i,j,n,ns,q
       parameter(n=100,ns=10000)
       integer :: p(2*n+1),x(ns)
-      real :: rp
       p=0
       do i=1,ns
       q=0
