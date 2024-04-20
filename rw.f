@@ -17,7 +17,7 @@
       end do
       x(i)=q
       end do
-      open(5,file='rw.dat')
+      open(5,file='rw.txt')
       do i=1,2*n+1
       p(i)=count(x.eq.(i-n-1))
       write(5,*)i-n-1,p(i)
