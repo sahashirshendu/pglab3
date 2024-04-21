@@ -1,7 +1,6 @@
       program gq
       implicit none
       real :: x1,x2,x3,u1,u2,u3,a,b,intg
-      integer :: i
       a=0.
       b=3.14159
       u1=-sqrt(3./5.)
