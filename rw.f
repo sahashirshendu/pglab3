@@ -17,7 +17,7 @@
       x(i)=q
       end do
       open(5,file='rw.txt')
-      do i=1,2*n+1
+      do i=1,2*n+1,2
       write(5,*)i-n-1,count(x.eq.(i-n-1))
       end do
       end
