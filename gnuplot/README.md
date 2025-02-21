@@ -29,4 +29,5 @@ gnuplot plotpdf.gnu
 ps2pdf plot.ps
 ```
 
-./plot.png
+![Sample](./plot.png)
+
