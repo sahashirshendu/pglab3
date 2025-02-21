@@ -1,10 +1,23 @@
 # A basic rundown of `gnuplot`
 
 ## Simple plot:
-```plot sin(x)```
+```
+plot sin(x)
+```
 
 ## Plot data file with 1st column along `x` and 2nd as `y`:
-```plot 'data.txt' using 1:2```
+### Scatter Plot
+```
+plot 'data.txt' using 1:2 w p
+```
+### Line Plot
+```
+plot 'data.txt' using 1:2 w l
+```
+### Line & Points
+```
+plot 'data.txt' using 1:2 w lp
+```
 
 ## For `png` graph:
 ```bash
