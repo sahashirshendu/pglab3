@@ -28,3 +28,5 @@ gnuplot plotpng.gnu
 gnuplot plotpdf.gnu
 ps2pdf plot.ps
 ```
+
+./plot.png
